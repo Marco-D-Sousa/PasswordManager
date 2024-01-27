@@ -6,9 +6,10 @@ from tkinter import messagebox
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
     entry_password.delete(0, END)
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm']
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+               'v', 'x', 'y', 'z']
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    symbols = ['@', '!', '%', '+']
+    symbols = ['@', '!', '%', '+', '_']
 
     password_letters = [choice(letters) for _ in range(randint(4, 6))]
     password_numbers = [choice(numbers) for _ in range(randint(2, 4))]
